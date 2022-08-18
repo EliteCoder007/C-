@@ -20,7 +20,7 @@ int main(){
     cout << "The address of ptr is " << &ptr << endl;
     cout << "The address of ptr is " << ptrOfPtr << endl;
     cout << "The value at adress ptrOfPtr is " << *ptrOfPtr << endl;
-    cout << "The value at address value at (avalue at (ptrOfPtr)) is " << **ptrOfPtr << endl;
+    cout << "The value at address value at (value at (ptrOfPtr)) is " << **ptrOfPtr << endl;
 
     return 0;
 }
