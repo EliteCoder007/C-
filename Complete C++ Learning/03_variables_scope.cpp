@@ -16,6 +16,7 @@ int main(){
     int a = 14, b = 15;
     float pi = 3.14;
     char c = 'd';
+    string name = "EliteLearner";
     bool is_true = true;
     sum();
     cout << glo << is_true;

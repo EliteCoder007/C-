@@ -4,8 +4,10 @@ using namespace std;
 
 class Binary{
     // private:
+    //If we declare any thing inside class this will automatically recognized as Private...
     string binaryNum;
     void checkBinary();
+    
     public:
         void read();
         // void checkBinary();

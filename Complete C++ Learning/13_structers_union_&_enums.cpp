@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//In C++ structure is built-in typedefed...
 typedef struct employee
 {
     int ID;

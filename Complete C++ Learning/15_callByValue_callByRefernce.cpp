@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//Call By Value
 int sum(int a, int b){
     int c = a + b;
     return c;

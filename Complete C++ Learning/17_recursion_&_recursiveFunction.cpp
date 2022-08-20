@@ -20,7 +20,7 @@ int fibonacci(int num){
     if(num < 2){
         return 1;
     }
-    return fibonacci(num -2) + fibonacci(num -1);
+    return fibonacci(num - 2) + fibonacci(num - 1);
 }
 
 //Step by step calculations of fibonacci(5):
