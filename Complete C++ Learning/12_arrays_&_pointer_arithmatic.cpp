@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     
     // int marks[] = {23, 45, 56, 89};
     // cout << "*** These are marks ***" << endl;

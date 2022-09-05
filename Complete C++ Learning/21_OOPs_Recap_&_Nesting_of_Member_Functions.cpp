@@ -17,29 +17,32 @@
 
 // Nesting of member functions
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
-class Binary{
+class Binary
+{
     // private:
-    //If we declare any thing inside class this will automatically recognized as Private...
+    // If we declare any thing inside class this will automatically recognized as Private...
     string binaryNum;
     void checkBinary();
-    
-    public:
-        void read();
-        // void checkBinary();
-        void display();
-        void ones_complement();            
+
+public:
+    void read();
+    // void checkBinary();
+    void display();
+    void ones_complement();
 };
 
-void Binary :: read(){
+void Binary ::read()
+{
     cout << "Enter a number: ";
     cin >> binaryNum;
 }
 
-void Binary :: checkBinary(){
+void Binary ::checkBinary()
+{
     for (int i = 0; i < binaryNum.length(); i++)
     {
         if (binaryNum.at(i) != '0' && binaryNum.at(i) != '1')
@@ -47,23 +50,23 @@ void Binary :: checkBinary(){
             cout << "Incorrect Binary Format" << endl;
             exit(0);
         }
-        
     }
-    
 }
 
-void Binary :: display(){
+void Binary ::display()
+{
     cout << "Displaying your binary number : " << binaryNum << endl;
 }
 
-void Binary :: ones_complement(){
+void Binary ::ones_complement()
+{
 
-    //Nesting...
+    // Nesting : means function in a function ,we can use it when function is at private and not accessible.
     checkBinary();
 
     for (int i = 0; i < binaryNum.length(); i++)
     {
-        if (binaryNum.at(i) == '0')     
+        if (binaryNum.at(i) == '0')
         {
             binaryNum.at(i) = '1';
         }
@@ -71,11 +74,11 @@ void Binary :: ones_complement(){
         {
             binaryNum.at(i) = '0';
         }
-        
     }
 }
 
-int main(){
+int main()
+{
     Binary Elite;
     Elite.read();
     // Elite.checkBinary();

@@ -19,7 +19,7 @@ public:
         this->address = address;
         this->age = age;
         this->password = password;
-        this->account_number = rand()%1000000;
+        this->account_number = rand()%1000000000;
         this->balance = 0;
         cout << "Your account no is " <<this->account_number << endl;
     }
