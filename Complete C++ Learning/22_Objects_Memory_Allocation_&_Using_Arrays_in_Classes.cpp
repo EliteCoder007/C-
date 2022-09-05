@@ -13,29 +13,28 @@ public:
     void displayPrice();
 };
 
-void Shop :: initCounter()
+void Shop ::initCounter()
 {
     counter = 0;
 }
 
-void Shop :: setPrice()
+void Shop ::setPrice()
 {
     cout << "Enter the ID of your item no " << (counter + 1) << " : " << endl;
     cin >> itemId[counter];
 
     cout << "Enter the price of your item : " << endl;
     cin >> itemPrice[counter];
-    
+
     counter++;
 }
 
-void Shop :: displayPrice()
+void Shop ::displayPrice()
 {
     for (int i = 0; i < counter; i++)
     {
-        cout << "The price of your item Id " << itemId[i] << " is : " << itemPrice[i] << endl; 
+        cout << "The price of your item Id " << itemId[i] << " is : " << itemPrice[i] << endl;
     }
-    
 }
 
 int main()
@@ -50,8 +49,6 @@ int main()
     }
 
     dukan.displayPrice();
-    
-    
 
     return 0;
 }
