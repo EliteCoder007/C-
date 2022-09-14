@@ -6,13 +6,13 @@ using namespace std;
 void findMax(int *array, int n)
 {
     int max = array[0];
-    int index = 1;
+    int index;
     for (int i = 0; i < n; i++)
     {
         int tempMax = array[i];
         if (tempMax > max)
         {
-            index++;
+            index = i;
             max = tempMax;
         }
         
@@ -25,14 +25,14 @@ void findMax(int *array, int n)
 void findMin(int *array, int n)
 {
     int min = array[0];
-    int index = 1;
+    int index;
     for (int i = 0; i < n; i++)
     {
         int tempMin = array[i];
         if (tempMin < min)
         {
             min = tempMin;
-            index++;
+            index = i;
         }
         
     }

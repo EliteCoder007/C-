@@ -3,7 +3,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void findIntersection(int *arrayN, int * arrayM, int sizeN, int sizeM)
+void findIntersection(int *arrayN, int *arrayM, int sizeN, int sizeM)
 {
     
 }
