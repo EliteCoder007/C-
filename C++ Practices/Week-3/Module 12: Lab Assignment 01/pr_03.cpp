@@ -1,20 +1,45 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+int main()
+{
 
-int main(){
-    int t;
-    int n;
-    for (int i = 0; i < t; i++)
+    int cs;
+    cin >> cs;
+    for (int test = 0; test < cs; test++)
+
     {
-        cin >> n;
-        int array[n];
-        for (int j = 0; j < n; j++)
+        int size;
+        cin >> size;
+        int array[size];
+        for (int i = 0; i < size; i++)
         {
-            array[j];
+            cin >> array[i];
         }
-        
+        for (int i = 1; i < size; i++)
+        {
+            bool change = false;
+            for (int j = 0; j < size - i; j++)
+            {
+                if (array[j] > array[j + 1])
+                {
+                    swap(array[j], array[j + 1]);
+                    change = true;
+                }
+            }
+            if (!change)
+            {
+                break;
+            }
+        }
+
+        int count = 0;
+        for (int i = 0; i < size; i++)
+        {
+            if (array[0] == array[i])
+            {
+                count++;
+            }
+        }
+        cout << size - count << endl;
     }
-    
-    
-    return 0;
 }

@@ -1,56 +1,36 @@
-// #include<bits/stdc++.h>
-// using namespace std;
-
-// int main(){
-//     int T;
-//     cin >> T;
-
-//     int N;
-//     int A[N];
-//     for (int i = 0; i < T; i++)
-//     {
-//         cin >> N;
-//         for (int j = 0; j < N; i++)
-//         {
-//             cin >> A[j];
-//         }
-//     }
-
-//     // int ans = 0;
-//     // for (int i = 0; i < T; i++)
-//     // {
-//     //     for (int j = 0; j < N; j++)
-//     //     {
-//     //         if (A[j] != A[j + 1])
-//     //         {
-//     //             A[j] == A[j + 1];
-//     //             ans++;
-//     //         }  
-//     //     }
-        
-        
-//     // }
-//     // cout << ans << endl;
-    
-//     return 0;
-// }
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-int t,i;
-cin>>t;
-while(t--)
-{
-int n;
-cin>>n;
-set<int>s;
-long long int a[n+1];
-for(i=0;i<n;i++)
-{
-cin>>a[i];
-s.insert(a[i]);
-}
-cout<<s.size()<<"\n";
-}
+    int cs;
+    cin >> cs;
+    for (int i = 0; i < cs; i++)
+    {
+        int size;
+        cin >> size;
+        int array[size];
+        for (int i = 0; i < size; i++)
+        {
+            cin >> array[i];
+        }
+
+        // count maximum frequency....
+        int max_count = 0;
+        for (int i = 0; i < size; i++)
+        {
+            int count = 0;
+            for (int j = 0; j < size; j++)
+            {
+                if (array[i] == array[j])
+                {
+                    count++;
+                }
+            }
+            if (count > max_count)
+            {
+                max_count = count;
+            }
+        }
+        cout << size - max_count << endl;
+    }
 }
